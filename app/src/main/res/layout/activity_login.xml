@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="فضلا ادخل بياناتك"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="90dp"
+        android:textColor="@color/LightSalmon4"
+        />
+
+    <TextView
+        android:id="@+id/login_clintName_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="اسم العميل"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="20dp"
+        android:gravity="start"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp" />
+
+    <EditText
+        android:id="@+id/login_clintName_et"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:hint="ادخل اسم المستخدم"
+        android:background="@drawable/data_field_shape"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        />
+    <TextView
+        android:id="@+id/login_email_tv"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="البريد الالكتروني"
+        android:gravity="start"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="20dp" />
+
+    <EditText
+        android:id="@+id/login_email_et"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:hint="ادخل  البريد الالكتروني"
+        android:background="@drawable/data_field_shape"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp" />
+
+
+
+    <android.widget.Button
+        android:id="@+id/login_BTN1"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="دخول"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/buttons_shape"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+</LinearLayout>

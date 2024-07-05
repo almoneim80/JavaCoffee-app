@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductsActivity"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    >
+
+    <android.widget.Button
+        android:id="@+id/home_main_btn"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="الرئيسية"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/buttons_shape"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        />
+
+    <android.widget.Button
+        android:id="@+id/home_add_btn"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="اضافة صنف"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/buttons_shape"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp" />
+
+</LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/products_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        />
+
+
+</LinearLayout>

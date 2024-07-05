@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardActivity"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/imge_border"
+        android:paddingBottom="15dp"
+        android:paddingTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/Card_box1_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الاصناف المضافة"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/LightSalmon4"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/products_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/imge_border"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="15dp"
+        >
+
+        <TextView
+            android:id="@+id/Card_box2_title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="معلومات الشراء"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/LightSalmon4"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            >
+
+            <TextView
+                android:id="@+id/Card_amount_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عدد الاصناف: "
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/Card_total_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الاجمالي: "
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/imge_border"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="15dp"
+        >
+
+        <TextView
+            android:id="@+id/Card_box3_title3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="معلومات الدفع"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/LightSalmon4"
+            />
+
+        <android.widget.Button
+            android:id="@+id/Card_BTN1"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:text="Apple Pay"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/buttons_shape"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            />
+
+
+        <android.widget.Button
+            android:id="@+id/Card_BTN2"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:text="دفع عند الاستلام"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/buttons_shape"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
